@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy 隱私權政策</title>
+  <style>
+    :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; --link: #0969da; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; --link: #4493f8; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 16px/1.7 "Segoe UI", "Microsoft JhengHei", system-ui, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1 { font-size: 1.6rem; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; margin-top: 32px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+    .sub { color: var(--muted); margin: 0 0 24px; }
+    a { color: var(--link); }
+    footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy 隱私權政策</h1>
+  <p class="sub">Auto-Scheduler · Last updated 最後更新：2026-09-28</p>
+
+  <h2>1. Overview 概述</h2>
+  <p>Auto-Scheduler is a personal desktop application that runs only on the user's own computer. It has no server and does not collect data for the developer.<br>
+  Auto-Scheduler 是只在使用者自己電腦上執行的個人桌面程式，沒有伺服器，也不會為開發者蒐集任何資料。</p>
+
+  <h2>2. Data accessed 存取的資料</h2>
+  <p>With the user's permission (Google Calendar API scope <code>https://www.googleapis.com/auth/calendar</code>), the app:<br>
+  經使用者授權（Google Calendar API 權限 <code>calendar</code>）後，本程式會：</p>
+  <ul>
+    <li>Read the list of the user's calendars and their events. 讀取使用者的日曆列表與活動。</li>
+    <li>Create or delete shift events, only when the user confirms. 僅在使用者確認後，新增或刪除排班活動。</li>
+  </ul>
+  <p>The app does not access any other Google data. 本程式不存取任何其他 Google 資料。</p>
+
+  <h2>3. Storage 資料儲存</h2>
+  <ul>
+    <li>The OAuth token is stored locally in <code>token.json</code> on the user's computer. OAuth 憑證僅儲存在使用者電腦上的 <code>token.json</code>。</li>
+    <li>Calendar data is kept in memory only while the app is running and is not saved elsewhere. 日曆資料只在程式執行期間暫存於記憶體，不另外保存。</li>
+  </ul>
+
+  <h2>4. Sharing 資料分享</h2>
+  <p>No data is sold, shared, or transferred to any third party. Data is exchanged only between the user's computer and Google's servers.<br>
+  不會出售、分享或傳送任何資料給第三方；資料只在使用者電腦與 Google 伺服器之間傳輸。</p>
+
+  <h2>5. Google API Services User Data Policy</h2>
+  <p>Auto-Scheduler's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.<br>
+  本程式使用 Google API 取得的資料，遵守 Google API 服務使用者資料政策（含限制使用規定）。</p>
+
+  <h2>6. Revoking access 撤銷授權</h2>
+  <p>Access can be revoked at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+  and by deleting <code>token.json</code>.<br>
+  可隨時在 Google 帳戶「第三方存取權」頁面撤銷授權，並刪除 <code>token.json</code>。</p>
+
+  <h2>7. Contact 聯絡</h2>
+  <p><a href="https://github.com/HenryYaoS">github.com/HenryYaoS</a></p>
+
+  <footer><a href="index.html">← Home 首頁</a></footer>
+</main>
+</body>
+</html>

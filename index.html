@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auto-Scheduler 自動排班</title>
+  <style>
+    :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; --link: #0969da; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; --link: #4493f8; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 16px/1.7 "Segoe UI", "Microsoft JhengHei", system-ui, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1 { font-size: 1.6rem; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; margin-top: 32px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+    .sub { color: var(--muted); margin: 0 0 24px; }
+    a { color: var(--link); }
+    footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Auto-Scheduler 自動排班</h1>
+  <p class="sub">A personal desktop tool for scheduling rotating shifts on Google Calendar.<br>
+  個人自用的 Google 日曆輪值排班桌面工具。</p>
+
+  <h2>What it does 功能</h2>
+  <ul>
+    <li>Reads the user's own calendar list and events to show existing schedules.<br>
+        讀取使用者自己的日曆列表與活動，顯示現有行程。</li>
+    <li>Generates a weekly rotation schedule and shows a preview (dry run) before writing.<br>
+        依人員名單產生每週輪值班表，寫入前先模擬預覽。</li>
+    <li>Creates or deletes shift events on the calendar only after the user confirms.<br>
+        使用者確認後，才在日曆上新增或刪除排班活動。</li>
+  </ul>
+
+  <h2>Who can use it 使用對象</h2>
+  <p>This is a personal, non-commercial tool used only by its developer. It is not offered as a public service.<br>
+  本工具為開發者個人自用、非商業用途，不對外提供服務。</p>
+
+  <h2>Privacy 隱私權</h2>
+  <p>All data stays on the user's own computer. See the <a href="privacy.html">Privacy Policy 隱私權政策</a>.<br>
+  所有資料僅保存在使用者自己的電腦上，詳見隱私權政策。</p>
+
+  <footer>
+    Contact 聯絡：<a href="https://github.com/HenryYaoS">github.com/HenryYaoS</a>
+  </footer>
+</main>
+</body>
+</html>
